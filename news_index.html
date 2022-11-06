@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>News Tak Hundstan </title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    max-height: 100vw;
+    line-height: 1.4;
+    padding: 20px 40px;
+}
+.container{
+    max-width: 1600px;
+
+}
+.heading-1{
+    font-size: 71px;
+    text-transform: uppercase;
+}
+
+.heading-2{
+font-size: 30px;
+line-height: 1.1;
+margin-bottom: 20px;
+}
+.heading-3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(244, 25, 25);
+    margin-bottom: 10px;
+}
+.Sub_heading{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(216, 97, 97);
+    padding-bottom: 10px;
+}
+.Sub_heading p{
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-right:10px;
+}
+.Sub_heading span{
+    color: rgb(223, 165, 93);
+    font-weight: 30;
+    border-right:1px solid #ccc;
+    padding-right: 10px;
+}
+.Sub_heading .importent{
+    color: rgb(7, 3, 3);
+    text-transform: uppercase;
+    font-weight:300;
+
+}
+.home{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:40px;
+}
+.home-img{
+    width:70%
+}
+.list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin-bottom:10px;
+}
+
+.list img{
+    width:60%;
+    height:80px;
+
+}  
+article > p{
+    font-size:20px;
+    margin-bottom:20px;
+
+    columns:3 25ch;
+    column-gap: 40px;
+    hyphens: auto;
+}
+article p:first-child::first-line{
+    font-weight: 800;
+    font-size: 30px;
+}
+blockquote{
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-bottom: 40px;
+
+}
+blockquote::before{
+    content: open-quote;
+    position: absolute;
+    top: -48px;
+    left: -4px;
+    opacity: .3;
+    color: #666;
+    font-size: 150px;
+}
+.cards{
+    columns: 25ch 3;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.card{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 10px 20px;
+    break-inside: avoid;
+}
+@media(max-width:950px){
+    .home{
+        grid-template-columns:1fr;
+    }
+}
+@media (max-width:500px)
+{
+.photo-1{
+    width: 80%;
+    height: 50%;
+
+}
+.heading-1,.heading-3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.Sub_heading span{
+    font-size: 15px;
+    color: rgb(223, 165, 93);
+    font-weight: 30;
+    border-right:1px solid #ccc;
+    padding-right: 10px;
+}
+.importent{
+    font-size: 12px;
+}
+.heading-2{
+    font-size: 20px;
+}
+}
+.list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.list img{
+    width:100%;
+    height: 80px;
+}
+
+</style>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+    <h1 class="heading-1">NEWS TAK HINDUSTAN</h1>
+    <div class="Sub_heading">
+        <p>Saturday,<span>November 5,2022</span></p>
+        <p class="importent">your right to know</p>
+    </div></header>
+    <div class="main">
+        <div class ="home">
+            <div class="left">
+                <img  class="photo-1" src="photo-1.jpg"alt="paper photo">
+            <h2 class="heading-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vero blanditiis commodi velit recusandae praesentium hic repellendus facilis! Mollitia, adipisci.
+            </h2>
+        </div>
+
+            <div class ="right">
+                <h3 class="heading-3">latest news</h3>
+                <div class="lists">
+                   
+                    <div class ="list">
+                        <img src="photo-1.jpg" alt="photo 1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, atque minus. Quos error dolor totam aspernatur a. Minus sit quia modi non illum, magnam veritatis, corporis earum iure ducimus at.</p>
+                        </div>
+
+                        <div class ="list">
+                            <img src="photo-2" alt="photo 2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, atque minus. Quos error dolor totam aspernatur a. Minus sit quia modi non illum, magnam veritatis, corporis earum iure ducimus at.</p>
+                            </div>
+
+                            <div class ="list">
+                                <img src="photo-3.jpeg" alt="photo 3">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, atque minus. Quos error dolor totam aspernatur a. Minus sit quia modi non illum, magnam veritatis, corporis earum iure ducimus at. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo nisi, nostrum vitae perspiciatis hic illum delectus iure neque eos minus, quam quod, soluta quos autem corrupti facilis quas placeat! </p>
+                                </div>
+
+                                <div class ="list">
+                                    <img src="photo-4.webp" alt="photo 4">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, atque minus. Quos error dolor totam aspernatur a. Minus sit quia modi non illum, magnam veritatis, corporis earum iure ducimus at.</p>
+                                    </div>
+
+                                    <div class ="list">
+                                        <img src="photo-5.jpg" alt="photo 5">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, atque minus. Quos error dolor totam aspernatur a.</p>
+                                        </div>
+                             </div>
+                     </div>                        </div>
+            </div>         
+      <article>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat libero praesentium, quidem animi ipsa expedita quisquam quam illum consequatur, rerum dolor veritatis minima cupiditate earum possimus debitis dolorem provident nemo quae. Reprehenderit blanditiis quos accusantium consequuntur recusandae ipsum doloribus laboriosam harum ipsa eaque, repellat accusamus eum pariatur corrupti labore! Excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nam ratione nobis? Facere rerum, labore consequuntur nostrum impedit quam laudantium praesentium molestias cum accusamus, aperiam sit veniam velit quas possimus sed!
+             Fugiat corporis rem voluptatem pariatur dolores odit tempora doloremque, consequatur hic libero! Sint unde tempore, doloribus impedit aperiam earum tempora et. Ut numquam sequi sunt excepturi, assumenda sed nihil, impedit quo nostrum animi, obcaecati quidem id maxime nesciunt reiciendis voluptates dolores tenetur laboriosam aperiam veritatis voluptatum inventore? Velit cumque dolore debitis. Nesciunt delectus voluptatum ipsum voluptates beatae, facilis aut iusto at quo ullam exercitationem excepturi architecto sapiente natus dolores. Explicabo nobis illo laudantium quo, delectus nulla unde debitis reprehenderit autem dolore possimus odio recusandae fugit. Magni vel distinctio laboriosam dolor, quas ratione animi explicabo quod, expedita architecto totam numquam rem quo maxime tenetur minus?
+                Id ad fugit laudantium nobis et porro perspiciatis vel odit adipisci repudiandae. Quo at est commodi blanditiis odio doloremque eligendi dolorum tempora dolores voluptate placeat sint recusandae, repudiandae quaerat eaque quod, iste architecto expedita adipisci voluptas voluptates sed ea veniam. Nobis dolorum nesciunt eveniet eos at animi voluptate veritatis, quam quod nemo dolor ratione qui doloremque, dignissimos eum recusandae neque voluptatum! Nam, eius facilis ullam saepe, obcaecati voluptates nihil reiciendis voluptatibus minima, quod neque vitae? Esse provident aperiam sunt, eos, incidunt molestias sed corrupti animi reprehenderit aliquid beatae cupiditate, nobis suscipit natus. Sapiente omnis, quis eveniet deleniti illo ullam totam, ad in et, vitae fuga rem a quidem perferendis odio quo. Harum fuga aliquam debitis officiis expedita dolore quos dolor ea eos culpa! Similique, possimus voluptates tempore ab voluptatum quas, excepturi expedita nihil sunt natus reprehenderit, non eligendi fugiat id facere officia animi soluta magni libero delectus provident vel accusantium. Animi perspiciatis, voluptas necessitatibus possimus dignissimos aspernatur a labore ducimus! 
+                Enim quaerat architecto alias neque officia dolor amet recusandae deserunt hic. Magnam repellat commodi laborum vero, error incidunt nesciunt ratione rerum, nam voluptatem eaque in provident iusto. Unde accusantium totam, et voluptas rerum modi, saepe in minus inventore, ratione eos. Eos possimus fuga ex earum vero hic dolor nisi incidunt ipsa ipsum officia odit consectetur ea cumque assumenda cupiditate fugiat, est nostrum asperiores in aperiam dolorum quasi magnam. Exercitationem, esse? Iusto unde eligendi perferendis asperiores deleniti aliquid quidem ducimus sint earum est, possimus nostrum cum modi, quod harum ullam a quae. Ratione cumque alias facilis officia eos animi tempore id blanditiis autem cupiditate maxime, ut quia aperiam nihil iste esse quo laborum reiciendis ipsum porro quos. Reprehenderit adipisci quisquam ut consequuntur repellendus, earum fugiat, repellat quae et quibusdam quis? Qui itaque, dolorem, est voluptatibus suscipit libero totam odit ab cupiditate, similique voluptatem ipsum! Molestiae expedita dolore quae, voluptatum ea unde alias impedit excepturi vitae distinctio, quaerat blanditiis qui totam. Placeat soluta explicabo impedit, asperiores facere atque aliquid obcaecati doloremque error omnis minima aspernatur excepturi est rem dolorum minus nulla deserunt quisquam amet. Eaque aliquid ut mollitia repellendus repellat, ad esse vero praesentium ratione ducimus dicta! Ducimus excepturi eligendi doloribus! Sapiente, nihil! Provident iure recusandae adipisci.</p>
+    </article> 
+          </div>          
+    </div>
+    <blockquote>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quaerat dicta maiores animi incidunt quae voluptatem iste odit illum iusto est nesciunt tempore ipsum exercitationem, error perspiciatis, veritatis dolorem delectus praesentium reprehenderit ut! Eius repellat odio dolore quos magnam culpa! Cumque accusantium voluptate, fuga, eligendi ratione saepe impedit rerum cum quam qui nisi non ut quidem quis! Est, eveniet impedit nostrum porro quidem velit neque in, incidunt explicabo mollitia laborum dolores, voluptates inventore odit tempora delectus perferendis ut culpa architecto asperiores quaerat vitae. Totam commodi nisi fuga ullam quas perferendis ipsum libero provident at. Alias quisquam suscipit velit eius, molestias nihil in enim inventore quaerat dolorum eos ratione maxime veritatis fugit id excepturi, repellendus quidem omnis, quo ducimus voluptatem! Dignissimos expedita quaerat eum laboriosam ex, fugit totam vero dicta hic. Consequatur perferendis nemo culpa alias incidunt similique laborum sapiente eveniet? Voluptatum eligendi harum reprehenderit aut optio, officiis fuga fugiat distinctio, odio libero nobis? Quidem error dolores, adipisci est, mollitia iste laboriosam animi optio dolore accusantium magni officia. Ab illo dolor facere voluptatum vero aliquam animi impedit at corrupti rerum. Ullam recusandae sequi sunt, qui eius molestias temporibus, pariatur, quae nihil harum ex sapiente rerum quaerat odit atque quod voluptates et iusto! Totam reprehenderit molestias commodi, ipsum quia fugiat. Ullam, ipsum voluptate. Magni sed quia perferendis? Porro impedit dignissimos voluptatum eius architecto nostrum quae eveniet, a ut reprehenderit facilis, explicabo sit obcaecati rerum beatae aliquam aperiam illo! Earum ipsam laudantium modi ad saepe dignissimos beatae enim quibusdam nam, repudiandae hic nesciunt nemo officiis sunt aut provident harum quasi blanditiis sequi pariatur consequatur commodi ratione est aspernatur. Minus adipisci dolores nam nobis sequi architecto, quos minima aperiam numquam maxime hic quia eligendi optio iure voluptatem dolorem odit rerum excepturi voluptatibus enim exercitationem facilis culpa a. Ipsa, id! Exercitationem corrupti, ratione nemo cum minus, tenetur perferendis laborum nulla fugiat nobis, velit ipsum quibusdam facilis dolorum non quaerat iste explicabo dolor! Laudantium nisi praesentium aliquam nulla animi, nesciunt quam corporis, nihil, placeat distinctio iusto alias ut accusamus est nostrum quo sint perferendis harum? Molestiae ex non fuga ipsum eveniet consequatur soluta maiores necessitatibus repudiandae eos, at sint minima tempora, sapiente voluptates iure! Pariatur provident dolores porro, suscipit fugit magnam nesciunt? Quasi praesentium obcaecati iure nostrum cum facere, quidem nesciunt nam error provident quam sequi enim odio vel impedit, illum debitis atque, dolorum dolores sed exercitationem pariatur. Dolorem at accusamus sequi? At nulla vel tempore?
+    </blockquote>
+    <div class="card">
+        <h4 class="height-4"> India</h4>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque corporis sint assumenda, accusantium quaerat sunt quis labore? Repudiandae, animi ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga placeat temporibus reprehenderit accusantium quas molestiae quisquam sed maxime eius?</p>
+    </div>
+
+    <div class="card">
+        <h4 class="height-4"> North India</h4>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque corporis sint assumenda, accusantium quaerat sunt quis labore? Repudiandae, animi ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga placeat temporibus reprehenderit accusantium quas molestiae quisquam sed maxime eius?</p>
+    </div>
+
+    <div class="card">
+        <h4 class="height-4"> South india</h4>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque corporis sint assumenda, accusantium quaerat sunt quis labore? Repudiandae, animi ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga placeat temporibus reprehenderit accusantium quas molestiae quisquam sed maxime eius?</p>
+    </div>
+
+    <div class="card">
+        <h4 class="height-4"> east india</h4>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque corporis sint assumenda, accusantium quaerat sunt quis labore? Repudiandae, animi ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga placeat temporibus reprehenderit accusantium quas molestiae quisquam sed maxime eius?</p>
+    </div>
+</body>
+</html>
